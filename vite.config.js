@@ -8,4 +8,5 @@ export default defineConfig({
       "@": "/src",
     },
   },
+  base: "/Calculator-React/", // Replace with your actual GitHub repository name
 });
