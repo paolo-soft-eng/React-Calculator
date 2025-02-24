@@ -1,0 +1,69 @@
+body{
+    background-image: url("assets/project1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+}
+.clock{
+    color: white;
+    font-size: 6rem;
+    font-family: Arial, Helvetica, sans-serif;font-weight: bold;
+    text-shadow: 3px 3px 5px red;
+    text-align: center;
+
+
+}
+.clock-container{
+    backdrop-filter: blur(5px);
+    width: 100vh;
+    padding: 10px 0px;
+}
+/* import { useState, useEffect } from "react";
+
+function PracticeUseEffect(){
+
+    const[time, setTime] = useState(new Date());
+
+    useEffect(()=>{
+        const Interval = setInterval(()=>{
+            setTime(new Date());
+        },1000);
+
+        return()=>{
+            clearInterval(Interval);
+        }
+
+    },[]);
+
+
+    function format(){
+        let hours = time.getHours();
+        const minutes = time.getMinutes();
+        const seconds = time.getSeconds();
+        const meridien = hours>=12? "PM": "AM";
+        hours = hours % 12 || 12;
+
+        return `${addZero(hours)}:${addZero(minutes)}:${addZero(seconds)}${meridien}`;
+    }
+
+    function addZero(number){
+        return (number < 10 ? "0": "")+number;
+    }
+    return(
+        <>
+        <div className="clock-container">
+            <div className="clock">
+                <span>{format()}</span>
+            </div>
+        </div>
+        </>
+    );
+}
+
+export default PracticeUseEffect */
